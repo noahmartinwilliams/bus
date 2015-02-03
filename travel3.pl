@@ -1,5 +1,5 @@
 :-['test-database.prolog'].
-travel(X, Y, Time_start, Time_end, Time_taken, go(bus(X, Y, Number, Time_start, End))):- 
+travel(X, Y, Time_start, Time_end, Time_taken, [go(bus(X, Y, Number, Time_start, End))]):- 
 	byBus(X, Y, Number, Start, End), 
 	(>(Start, Time_start); =(Start, Time_start)),
 	(<(End, Time_end); =(End, Time_end)),
