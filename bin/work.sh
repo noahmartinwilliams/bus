@@ -1,5 +1,6 @@
 #! /bin/bash
 
+cd bus-schedule
 [ -d trips ] || mkdir trips
 cat stop_times.txt | sed '1d' | while read X;
 do

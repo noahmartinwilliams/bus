@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd trips/
+cd bus-schedule/trips/
 for FILE in *;
 do
 	echo "$FILE"
